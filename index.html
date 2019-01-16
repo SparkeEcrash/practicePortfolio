@@ -22,6 +22,10 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <!-- Javascript -->
+    <script src></script>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -117,8 +121,19 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact James</h2>
                 <p>Feel free to email James and give him a job!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">jpark1219dev@gmail.com</a>
+                <p id="email">
+                    <a href="mailto:feedback@startbootstrap.com">jpark1219dev@gmail.com</a>
                 </p>
+
+                <form id="contactForm">
+                    <input type="text" style="color:black;" name="contactemail" placeholder="your email" value="test@test.com">
+                    <div class="error"></div>
+                    <input type="text" style="color:black;" name="subject" placeholder="subject" value="subject">
+                    <div class="error"></div>                    
+                    <textarea name="message" style="color:black;" placeholder="enter your message">message</textarea>
+                    <div class="error"></div>
+                    <button type="button" id="sendMessage">SEND</button>
+                </form>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -145,6 +160,12 @@
     </footer>
 
     <!-- jQuery -->
+    <script type="text/javascript">
+        
+    
+    </script>
+
+
     <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -158,6 +179,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+
+    <!-- my custom js file -->
+    <script type="text/javascript" src="./js/custom.js"></script>
 
 </body>
 
